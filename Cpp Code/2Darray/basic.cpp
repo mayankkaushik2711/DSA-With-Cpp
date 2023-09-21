@@ -18,6 +18,7 @@ int main(){
     }
 
     cout<<"2darray is\n";
+    cout<<"yo boy\n";
 
      for (int i = 0; i < m; i++)
     {
