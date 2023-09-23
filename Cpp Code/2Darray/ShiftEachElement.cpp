@@ -82,3 +82,68 @@
 // }
 
 
+#include<iostream>
+using namespace std;
+
+int main(){
+    int arr[4][4]={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16};
+
+    cout<<"before shifting\n";
+
+    for(int i=0 ; i<4 ;i++){
+        for(int j=0 ; j<4 ; j++){
+            cout<<arr[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+
+    cout<<"after shifting\n";
+
+    int top=0;
+    int bottom=3;
+    int left=0;
+    int right=3;
+
+
+    while(right>=left && bottom >= top){
+        int temp=arr[top][left];
+
+        for(int i=left+1 ; i<=right; i++){
+            int tem=arr[top][i];
+            arr[top][i]=temp;
+            temp=tem;
+        }
+        top++;
+        
+
+        for(int i=top ; i<=bottom ;i++){
+            int tem=arr[i][right];
+            arr[i][right]=temp;
+            temp=tem;
+        }
+        right--;
+
+        for(int i=right ; i>=left ; i--){
+            int tem=arr[bottom][i];
+            arr[bottom][i]=temp;
+            temp=tem;
+        }
+        bottom--;
+
+        for(int i=bottom ; i>=(top-1) ; i--){
+            int tem=arr[i][left];
+            arr[i][left]=temp;
+            temp=tem;
+        }
+        left++;
+
+
+    }
+
+    for(int i=0 ; i<4; i++){
+        for(int j=0 ; j<4 ; j++){
+            cout<<arr[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+}
