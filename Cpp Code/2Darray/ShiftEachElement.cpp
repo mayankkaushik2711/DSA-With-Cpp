@@ -97,7 +97,7 @@ int main(){
         cout<<endl;
     }
 
-    cout<<"after shifting\n";
+    cout<<"after shifting matrix is\n";
 
     int top=0;
     int bottom=3;
