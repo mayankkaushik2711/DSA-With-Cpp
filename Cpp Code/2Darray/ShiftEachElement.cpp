@@ -105,8 +105,8 @@ int main(){
     int right=3;
 
 
-    while(right>=left && bottom >= top){
-        int temp=arr[top][left];
+    while(right>=left && bottom >= top){                     //temp=previous element
+        int temp=arr[top][left];                             //tem=current
 
         for(int i=left+1 ; i<=right; i++){
             int tem=arr[top][i];
