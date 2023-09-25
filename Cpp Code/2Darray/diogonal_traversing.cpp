@@ -14,6 +14,8 @@ int main(){
         cout<<endl;
     }
 
+    cout<<"required output is";
+
     int loop=(4*2)-1;
     int m=0;
 
