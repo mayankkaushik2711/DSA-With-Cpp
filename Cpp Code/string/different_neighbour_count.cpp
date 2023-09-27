@@ -8,18 +8,37 @@ int main(){
     getline(cin,str);
 
     int count=0;
+    int n=str.length();
 
-    
-        if (str[0]==str[1])
+    for(int i=0 ; i<n ; i++)
+    {
+        if(i==0)
         {
-            count++;
+            if (str[i]!=str[i+1])
+            {
+                count++;
+            }
         }
-        else if(str[str.size()-1]==str[str.size()-2]){
 
+        else if(i==n-1)
+        {
+            if(str[i]!=str[i-1])
+            {
+                count++;
+            }
         }
-            
+
         
+        else if(str[i]!=str[i-1]  && str[i]!=str[i+1] )
+            {
+                count++;
+                
+            }
+         
+    
         
     }
+
+    cout<<count;
     
 }
