@@ -6,5 +6,5 @@ int main(){
     string str;
     getline(cin,str);
 
-    cout<<str.substr(2,1);
+    cout<<str.substr(2,5);
 }
