@@ -17,7 +17,7 @@ int main(){
         store=arr[0];
         k--;
     }
-    for
+    for()
 
 
 }
