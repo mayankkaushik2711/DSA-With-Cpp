@@ -1,45 +1,45 @@
-// #include<iostream>
-// #include<string>
+#include<iostream>
+#include<string>
 
-// using namespace std;
+using namespace std;
 
-// int main(){
-//     string str;
-//     getline(cin,str);
+int main(){
+    string str;
+    getline(cin,str);
 
-//     int count=0;
-//     int n=str.length();
+    int count=0;
+    int n=str.length();
 
-//     for(int i=0 ; i<n ; i++)
-//     {
-//         if(i==0)
-//         {
-//             if (str[i]!=str[i+1])
-//             {
-//                 count++;
-//             }
-//         }
+    for(int i=0 ; i<n ; i++)
+    {
+        if(i==0)
+        {
+            if (str[i]!=str[i+1])
+            {
+                count++;
+            }
+        }
 
-//         else if(i==n-1)
-//         {
-//             if(str[i]!=str[i-1])
-//             {
-//                 count++;
-//             }
-//         }
+        else if(i==n-1)
+        {
+            if(str[i]!=str[i-1])
+            {
+                count++;
+            }
+        }
 
         
-//         else if(str[i]!=str[i-1]  && str[i]!=str[i+1] )
-//             {
-//                 count++;
+        else if(str[i]!=str[i-1]  && str[i]!=str[i+1] )
+            {
+                count++;
                 
-//             }
+            }
          
     
         
-//     }
+    }
 
-//     cout<<count;
+    cout<<count;
     
-// }
+}
 
