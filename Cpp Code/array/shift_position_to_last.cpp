@@ -9,15 +9,24 @@ int main(){
 
     while(k>0){
         int store=arr[6];
-        for (int i = 0; i < s-1; i++)
+        int temp=arr[s-1];
+        for (int i = s-1; i > 0; i--)
         {
-            arr[i+1]=arr[i];
+            
+            
+            arr[i]=arr[i-1];
+            
            
         }
-        store=arr[0];
+        arr[0]=temp;
+        
         k--;
     }
-    for()
+    for (int i = 0; i < s; i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+    
 
 
 }
