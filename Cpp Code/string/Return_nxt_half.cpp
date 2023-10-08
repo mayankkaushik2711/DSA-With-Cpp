@@ -11,3 +11,4 @@ int main(){
 
     cout<<str.substr(half);
 }
+//comment
