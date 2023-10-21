@@ -12,3 +12,4 @@ int main(){
     int ans=ap(n);
     cout<<ans;
 }
+//do some more practice
