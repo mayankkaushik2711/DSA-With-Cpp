@@ -18,3 +18,4 @@ int main(){
     cin>>n;
     cout<<product(n);
 }
+// coding is love
