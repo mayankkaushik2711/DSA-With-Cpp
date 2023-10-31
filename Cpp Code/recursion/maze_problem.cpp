@@ -15,4 +15,5 @@ int main(){
     cin>>sr>>sc>>er>>ec;
 
     cout<<maze(sr,sc,er,ec);
+    cout<<" ";
 }
