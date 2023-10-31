@@ -13,3 +13,4 @@ int main(){
     cout<<ans;
 }
 //do some more practice
+//code
