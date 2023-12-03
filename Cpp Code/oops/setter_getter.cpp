@@ -1,36 +1,81 @@
+// #include<iostream>
+// using namespace std;
+
+// class myclass{
+// private:
+//     int no;
+//     int sq;
+// public:
+
+//     // setter..............................
+//     void putno(int x){
+//         no=x;
+//     }
+
+//     void putsq(int y){
+//         sq=y;
+//     }
+
+//     // getter................................
+//     void retno(){
+//         cout<<no<<endl;
+//     }
+
+//     void retsq(){
+//         cout<<sq;
+//     }
+
+// };
+
+// int main(){
+//     myclass d;
+//     d.putno(5);
+//     d.putsq(10);
+//     d.retno();
+//     d.retsq();
+// }
+
 #include<iostream>
 using namespace std;
 
-class myclass{
-private:
-    int no;
-    int sq;
-public:
+class hero{
+    private:
+    int n;
+    string s;
 
-    // setter..............................
-    void putno(int x){
-        no=x;
+    public:
+    void getn(){
+        cout<<n;
     }
 
-    void putsq(int y){
-        sq=y;
+    void gets(){
+        cout<<s;
     }
 
-    // getter................................
-    void retno(){
-        cout<<no<<endl;
+    void setn(int no){
+        n=no;
     }
 
-    void retsq(){
-        cout<<sq;
+    void sets(string str){
+        s=str;
     }
 
 };
 
 int main(){
-    myclass d;
-    d.putno(5);
-    d.putsq(10);
-    d.retno();
-    d.retsq();
+
+    hero hulk;
+    
+    string str;
+    getline(cin,str);
+    hulk.sets(str);
+
+    int n;
+    cin>>n;
+    hulk.setn(n);
+
+    hulk.gets();
+    cout<<endl;
+    hulk.getn();
+
 }

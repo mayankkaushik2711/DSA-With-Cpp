@@ -1,19 +1,35 @@
-// #include<iostream>
-// using namespace std;
+#include<iostream>
+using namespace std;
 
-// class car{
-//     public:
-//     int no;
-//     int seq;
-// };
+class car{
+    public:
+    int no;
+    int seq;
+    string stri;
+};
 
-// int main(){
-//     car kia;
-//     kia.no = 2730;
-//     kia.seq = 1;
-//     cout<<kia.no<<endl;
-//     cout<<kia.seq;
-// }
+int main(){
+    car kia;
+
+    int n;
+    cin>>n;
+    kia.no = n;
+
+    int seq;
+    cin>>seq;
+    kia.seq = seq;
+    
+    cin.ignore();
+
+    string str;
+    getline(cin,str);
+    kia.stri = str;
+
+    cout<<"kia.no "<<kia.no<<endl;
+    cout<<"kia.seq "<<kia.seq<<endl;
+    cout<<"kia.stri "<<kia.stri;
+
+}
 
 
 
