@@ -21,6 +21,7 @@
 using namespace std;
 
 int main(){
+<<<<<<< HEAD
     int arr[4][3]={1,2,3,0,5,6,7,8,1,2,3,0};
     for(int i=0 ; i<4 ; i++){
         for(int j=0 ; j<3 ; j++){
@@ -71,3 +72,12 @@ int main(){
     }
     
 }
+=======
+    int n;
+    cin>>n;
+    int ans=ap(n);
+    cout<<ans;
+}
+//do some more practice
+//code
+>>>>>>> 9ab6e8d72d1dba3cb98714591786654a897516c0

@@ -13,6 +13,7 @@ int main(){
 
     int n;
     cin>>n;
+    cout<<"akka";
     kia.no = n;
 
     int seq;
