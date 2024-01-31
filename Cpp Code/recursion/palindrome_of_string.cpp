@@ -1,43 +1,25 @@
 #include<iostream>
 using namespace std;
 
-//............................self-tried......................
-
-// void call(string str,string &emp,int idx){
-//     if(str.size()==idx){
-//         return;
-//     }
-//     call(str,emp,idx+1);
-//     emp+=str[idx];
-// }
-
-// int main(){
-//      string str="jahaj";
-//      string emp="";
-//      call(str,emp,0);
-//      if(str==emp){
-//         cout<<"true"<<endl;
-//      }
-//      else{
-//         cout<<"false";
-//      }
-// }
-
-//.............................clue-taken........................
-
-
-bool call(string str,int s,int e){
-    if(s>=e){
-        return true;
+void pali(string &str,int start,int end){
+    if(start>end){
+        return;
     }
-
-    if(str[s]==str[e]){
-        return call(str,s+1,e-1);
-    }
-
-    return false;
+    swap(str[start],str[end]);
+    pali(str,start+1,end-1);
 }
+
 int main(){
-    string str="jahj";
-    cout<<call(str,0,str.size()-1);
+    string str="jhaj";
+    string check=str;
+    pali(str,0,4);
+    
+    bool flag=false;
+
+    if(check==str){
+        flag=true;
+    }
+
+    cout<<flag;
+
 }
