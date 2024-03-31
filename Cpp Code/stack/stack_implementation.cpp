@@ -65,3 +65,7 @@ int main(){
    st.push(4);
    st.peek();
 }
+
+
+
+

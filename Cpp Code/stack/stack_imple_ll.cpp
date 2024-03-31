@@ -29,11 +29,6 @@ class ListNode{
 
 };
 
-class stack{
-    public:
-    ListNode* temp;
-
-};
 
 int main(){
 

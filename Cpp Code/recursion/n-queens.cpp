@@ -106,3 +106,68 @@ int main(){
         cout<<endl;
     }
 }
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+//isSafe function
+bool isSafe(int arr[5][5],int row,int col){
+    //on left side
+    for(int i=0 ; i<col ; i++){
+        if(arr[row][i]){
+            return false;
+        }
+    }
+    
+    //on uppr left diogonal
+    for(int i=row,j=col ; i>=0 && j>=0 ; i--,j--){
+        if(arr[i][j]){
+            return false;
+        }
+    }
+    
+    for(int i=row,j=col ; i<5 && j>=0 ; i++,j--){
+        if(arr[i][j]){
+            return false;
+        }
+    }
+    return true;
+}
+
+bool nQueen(int arr[5][5],int col){
+    //base case
+    if(col>=5){
+        return true;
+    }
+    
+    //placing queen
+    for(int i=0 ; i<5 ; i++){
+        //isSafe
+        if(isSafe(arr,i,col)){
+            //putting queen
+            arr[i][col]=1;
+            
+            //again calling nQueen function for next row
+            if(nQueen(arr,col+1)){
+                return true;
+            }
+            
+            // backtrack yadi age queen rakhna posible nhi hua to piche jaha par queen rakhe the usko hatana hai
+            arr[i][col]=0;
+        }
+    }
+    return false;
+}
+
+int main() {
+    int arr[5][5] = {{0,0,0,0,0},{0,0,0,0,0},{0,0,0,0,0},{0,0,0,0,0},{0,0,0,0,0}};
+    nQueen(arr,0);
+    
+    for(int i=0 ; i<5 ; i++){
+        for(int j=0 ; j<5 ; j++){
+            cout<<arr[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+}

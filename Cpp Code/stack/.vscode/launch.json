@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Asus/OneDrive/Desktop/c++/queue",
-      "program": "c:/Users/Asus/OneDrive/Desktop/c++/queue/build/Debug/outDebug",
+      "cwd": "c:/Users/Asus/OneDrive/Desktop/c++/Cpp Code/stack",
+      "program": "c:/Users/Asus/OneDrive/Desktop/c++/Cpp Code/stack/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
